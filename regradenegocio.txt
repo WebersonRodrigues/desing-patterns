@@ -1,0 +1,79 @@
+1° Exemplo:
+
+Ter um sistema que cria orçamentos e precisa calcular impostos diversos.
+
+Impostos:
+
+ICMS = 10%
+ISS = 7%
+PIS = 5%
+COFINS = 5%;
+
+Qual o valor do ICMS do Orcamento?
+Qual o valor do ISS do Orcamento?
+
+Aprendemos o Strategy
+===========================================
+2° Exemplo:
+
+Todo orcamento pode ter descontos variados.
+Desconto por mais de 5 itens
+Desconto maior que 500.00
+
+Aprendemos o Chain of Responsibility
+===========================================
+3° Exemplo:
+
+Precisamos aplicar no nossos projeto mais 2 novos impostos.
+
+COFINS = valor >= 500 7% || 5%  valor >= 500 7% || 5%  - OK
+ST = valor >= 500 && ter algum item com valor > 100 6% || 4%
+
+Diminuir a repetição de código e facilitar diferentes implementar em um unico lugar.
+Apredemos o Template Method
+
+============================================
+4° Exemplo:
+
+Precismos ter impostos que podem ser compostos ou não por outros impostos.
+ISS é composto por ICMS
+
+Aprendemos o padrão Decorator
+
+============================================
+5° Exemplo:
+
+Estados diferentes de um mesmo orçamentos
+Em aprovação 5%
+Aprovado  2%
+Reprovado 0%
+Finalizado 0%
+
+Dependendo do estado, eu posso querer ir para estados diferentes.
+um estado saiba ir para o proximo estado.
+
+Conseguimos fazer com que cada estado pudesse ter sua propria regra de descontos e Conseguimos
+fazer com que os estados saibam ir para o proximo estado de acordo com a regra de negocio.
+
+Aprendemos o padrão State
+===========================================
+6° Exemplo:
+
+Eu quero criar uma nota fiscal e poder construir ela de maneira simples.
+
+Aprendemos o padrão builder.
+
+Fluent Interface ou Method Chaining
+
+=============================================
+7° Exemplo
+
+Depois de criar a nota fiscal a gente poderia:
+    Enviar por Email
+    Enviar pelo WhatsApp
+    Salvar no Banco de dados.
+
+Aprendemos o padrão Observer
+
+Ele ajuda agente a desacoplar o código,  ele não conhece as ações, ele simplismente executa não importa quantas tenham.
+Um dos padrões mais utilizados no dia a dia.
